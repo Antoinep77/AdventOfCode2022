@@ -23,6 +23,8 @@ source-repository head
 library
   exposed-modules:
       Day1.Exo1
+      Day2.Exo1
+      Day2.Exo2
       Main
       Utils
   other-modules:
@@ -38,6 +40,8 @@ executable main-exe
   main-is: Main.hs
   other-modules:
       Day1.Exo1
+      Day2.Exo1
+      Day2.Exo2
       Utils
       Paths_adventofcode2022
   hs-source-dirs:
