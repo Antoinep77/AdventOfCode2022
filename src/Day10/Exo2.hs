@@ -4,7 +4,6 @@ module Day10.Exo2
 where
 
 import Utils.Utils
-import Utils.VectorUtils
 import Data.List
 import qualified Data.Set as Set
 
