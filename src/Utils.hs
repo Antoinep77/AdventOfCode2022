@@ -2,6 +2,7 @@ module Utils
   ( split,
     modifyElement,
     debug,
+    getOrElse,
   )
 where
 
@@ -27,3 +28,6 @@ startWith (h:t) (h2:t2) = h == h2 && startWith t t2
 
 modifyElement n val list = take n list ++ [val] ++ drop (n+1) list
 
+getOrElse :: Maybe a -> a -> a
+getOrElse Nothing x = x
+getOrElse (Just x) _ = x
