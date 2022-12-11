@@ -4,7 +4,8 @@ module Day8.Exo2
   )
 where
 
-import Utils
+import Utils.Utils
+import Utils.ListUtils as ListUtils
 import Data.List
 import qualified Data.Set as Set
 
@@ -32,7 +33,7 @@ getScenicScorByCoord grid (x,y)  = scenicScore height [leftView,rightView,topVie
     rightView = drop (y+1) (grid !! x) 
     topView = reverse $ take x (transposedGrid !! y) 
     bottomView = drop (x+1) (transposedGrid !! y)
-    transposedGrid = Utils.transpose grid
+    transposedGrid = ListUtils.transpose grid
 
 solve :: [[Int]] -> Int
 solve grid = maximum $ map (getScenicScorByCoord grid) $ enumerate [0..(length grid - 1)] [0..(length (head grid) - 1)]

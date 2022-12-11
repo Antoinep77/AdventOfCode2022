@@ -3,7 +3,8 @@ module Day6.Exo1
   )
 where
 
-import Utils
+import Utils.Utils
+import Utils.ListUtils
 import Data.List
 import qualified Data.Set as Set
 

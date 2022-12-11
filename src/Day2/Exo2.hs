@@ -3,7 +3,8 @@ module Day2.Exo2
   )
 where
 
-import Utils
+import Utils.Utils
+import Utils.ListUtils
 
 solution :: String -> Int
 solution = sum . map ((\[x,y] -> score x y ) . words ) . split "\n"

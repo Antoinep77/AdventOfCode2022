@@ -3,7 +3,8 @@ module Day8.Exo1
   )
 where
 
-import Utils
+import Utils.Utils
+import Utils.ListUtils as ListUtils
 import Data.List
 import qualified Data.Set as Set
 
@@ -30,10 +31,10 @@ getGridIndexes  (line:rest) = Set.union lineIndexes recIndexes
 getReverseGridIndex grid = Set.map (\(x,y) -> (x, length (head grid) - 1 - y)) $ getGridIndexes reversedGrid
   where reversedGrid = map reverse grid
 
-getTransposedGridIndex grid = Set.map (\(x,y) -> (y,x)) $ getGridIndexes $ Utils.transpose grid
+getTransposedGridIndex grid = Set.map (\(x,y) -> (y,x)) $ getGridIndexes $ ListUtils.transpose grid
 
 getReversedTransposedGridIndex grid = Set.map (\(x,y) -> (length (head grid) - 1 - y, x)) $
-                               getGridIndexes $ map reverse $ Utils.transpose grid
+                               getGridIndexes $ map reverse $ ListUtils.transpose grid
 
 
 getAllIndexes grid = Set.union ( getTransposedGridIndex grid) $

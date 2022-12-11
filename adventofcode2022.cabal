@@ -35,8 +35,12 @@ library
       Day7.Exo2
       Day8.Exo1
       Day8.Exo2
+      Day9.Exo1
+      Day9.Exo2
       Main
-      Utils
+      Utils.ListUtils
+      Utils.Utils
+      Utils.VectorUtils
   other-modules:
       Paths_adventofcode2022
   hs-source-dirs:
@@ -62,7 +66,11 @@ executable main-exe
       Day7.Exo2
       Day8.Exo1
       Day8.Exo2
-      Utils
+      Day9.Exo1
+      Day9.Exo2
+      Utils.ListUtils
+      Utils.Utils
+      Utils.VectorUtils
       Paths_adventofcode2022
   hs-source-dirs:
       src

@@ -3,7 +3,8 @@ module Day7.Exo2
   )
 where
 
-import Utils
+import Utils.Utils
+import Utils.ListUtils
 import Data.List
 import qualified Data.Map as Map
 

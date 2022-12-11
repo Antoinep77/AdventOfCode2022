@@ -3,7 +3,8 @@ module Day5.Exo1
   )
 where
 
-import Utils
+import Utils.Utils
+import Utils.ListUtils
 import qualified Data.Tuple as Tuple
 
 

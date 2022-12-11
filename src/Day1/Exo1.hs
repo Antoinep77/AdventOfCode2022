@@ -3,7 +3,8 @@ module Day1.Exo1
   )
 where
 
-import Utils
+import Utils.Utils
+import Utils.ListUtils
 import Data.List
 
 solution1 :: String -> Int
