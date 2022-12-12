@@ -27,6 +27,8 @@ library
       Day10.Exo2
       Day11.Exo1
       Day11.Exo2
+      Day12.Exo1
+      Day12.Exo2
       Day2.Exo1
       Day2.Exo2
       Day3.Exo1
@@ -42,6 +44,7 @@ library
       Day9.Exo1
       Day9.Exo2
       Main
+      Utils.GraphUtils
       Utils.ListUtils
       Utils.Utils
       Utils.VectorUtils
@@ -62,6 +65,8 @@ executable main-exe
       Day10.Exo2
       Day11.Exo1
       Day11.Exo2
+      Day12.Exo1
+      Day12.Exo2
       Day2.Exo1
       Day2.Exo2
       Day3.Exo1
@@ -76,6 +81,7 @@ executable main-exe
       Day8.Exo2
       Day9.Exo1
       Day9.Exo2
+      Utils.GraphUtils
       Utils.ListUtils
       Utils.Utils
       Utils.VectorUtils
